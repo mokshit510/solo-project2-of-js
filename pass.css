@@ -1,0 +1,134 @@
+/* Using CSS variables for easy theme management */
+:root {
+    --bg-dark: #1F2937;
+    --text-white: #FFFFFF;
+    --text-gray: #D5D4D8;
+    --accent-green: #10B981;
+    --box-bg: #273549;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif; /* Standard Scrimba font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 450px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.title span {
+    color: var(--accent-green);
+}
+
+.subtitle {
+    color: var(--text-gray);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.divider {
+    border: 1px solid #2F3E53;
+    margin: 35px 0;
+}
+
+.output-container {
+    display: flex;
+    gap: 20px;
+}
+
+.password-box {
+    background-color: var(--box-bg);
+    color: #55F991; /* Light green for text */
+    flex: 1;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.settings-container {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.settings-container label {
+    font-size: 16px;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+#length-input {
+    background-color: var(--box-bg);
+    border: 1px solid #2F3E53;
+    color: var(--accent-green);
+    padding: 8px;
+    border-radius: 4px;
+    width: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+/* Optional: style the arrows on the number input */
+#length-input::-webkit-inner-spin-button {
+    opacity: 1;
+}
+.settings-container {
+    display: flex;
+    flex-direction: column; /* Stack length and checkboxes */
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: var(--text-gray);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Style the checkbox color to match your theme */
+input[type="checkbox"] {
+    accent-color: var(--accent-green);
+    transform: scale(1.2);
+}

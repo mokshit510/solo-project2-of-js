@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pass.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Generate a <br><span>random password</span></h1>
+        <p class="subtitle">Never use an insecure password again.</p>
+        <div class="settings-container">
+            <div class="setting">
+                <label for="length-input">Length:</label>
+                <input type="number" id="length-input" min="4" max="15" value="15">
+            </div>
+    
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="check-alpha" checked> Alphabets</label>
+                <label><input type="checkbox" id="check-symbols" checked> Symbols</label>
+            </div>
+        </div>
+        <button id="gen-btn" class="btn" onclick="render()">Generate passwords</button>
+        
+        <hr class="divider">
+        
+        <div class="output-container">
+            <div class="password-box" id="pw-1">>nfJjy!dDVr&ial</div>
+            <div class="password-box" id="pw-2">eg<xWij@veiPUwK</div>
+        </div>
+    </main>
+    <script src="pass.js"></script>
+</body>
+</html>
