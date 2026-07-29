@@ -71,7 +71,7 @@ Or, if you're using **VS Code**, install the **Live Server** extension and click
 ---
 ## 📸 Preview
 
-<img src="./screenshots/homepage.png" alt="RPG" width="700">
+<img src="./screenshorts/homepage.png" alt="RPG" width="700">
 
 ---
 
