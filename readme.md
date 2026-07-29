@@ -69,14 +69,9 @@ Simply open **pass.html** in your preferred web browser.
 Or, if you're using **VS Code**, install the **Live Server** extension and click **Go Live**.
 
 ---
-
 ## 📸 Preview
 
-> Add a screenshot of your application here.
-
-```md
-![Random Password Generator](./screenshots/homepage.png)
-```
+<img src="./screenshots/homepage.png" alt="RPG" width="700">
 
 ---
 
