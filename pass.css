@@ -1,4 +1,4 @@
-/* Using CSS variables for easy theme management */
+
 :root {
     --bg-dark: #1F2937;
     --text-white: #FFFFFF;
@@ -10,7 +10,7 @@
 body {
     background-color: var(--bg-dark);
     color: var(--text-white);
-    font-family: 'Inter', sans-serif; /* Standard Scrimba font */
+    font-family: 'Inter', sans-serif; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@ body {
 
 .password-box {
     background-color: var(--box-bg);
-    color: #55F991; /* Light green for text */
+    color: #55F991; 
     flex: 1;
     height: 40px;
     border-radius: 6px;
@@ -100,14 +100,12 @@ body {
     font-weight: bold;
     outline: none;
 }
-
-/* Optional: style the arrows on the number input */
 #length-input::-webkit-inner-spin-button {
     opacity: 1;
 }
 .settings-container {
     display: flex;
-    flex-direction: column; /* Stack length and checkboxes */
+    flex-direction: column; 
     gap: 15px;
     margin-bottom: 25px;
 }
@@ -127,7 +125,6 @@ body {
     gap: 8px;
 }
 
-/* Style the checkbox color to match your theme */
 input[type="checkbox"] {
     accent-color: var(--accent-green);
     transform: scale(1.2);
